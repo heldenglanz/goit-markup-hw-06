@@ -287,13 +287,6 @@
                             </a></li>
 </ul>
 
-    
-        
-
-            
-                
-                    
-
 </div>
 
     </section>
@@ -350,17 +343,31 @@
                             </a>  
                          </li>
                 </ul>
+                
      </div>
-        </div>
+     <div class="div-email">
+        <label for="email" class="label-email">Подпишитесь на рассылку
+        <input type="email" id="email" class="input-email" placeholder="E-mail"/>
+        </label>
+        <button type="button" class="hero-btn email-btn btn">Подписаться</button>
+    </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop " data-modal>
         <div class="modal">
             <button class="closebtn" type="button" data-modal-close>
                 <svg class="close" width="11px" height="11px">
                     <use href="./svg/sprite.svg#icon-closebtn"></use>
                 </svg>
             </button>
+            <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
+            <label type="modal-name" class="label-modal">Имя<input type="name" class="modal-info" id="modal-name"/></label>
+            <label type="modal-tel" class="label-modal">Телефон<input type="name" class="modal-info" id="modal-tel"/></label>
+            <label type="modal-mail" class="label-modal">Почта<input type="name" class="modal-info" id="modal-mail"/></label>
+            <label type="modal-text" class="label-modal">Комментарий<input type="text" class="modal-info" id="modal-text"/></label>
         </div>
+        
+        </div>
+   
     </div>
     <script src="./js/modal.js"></script>
 </body>
