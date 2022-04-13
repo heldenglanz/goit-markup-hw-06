@@ -61,7 +61,7 @@ ul {
 
 
 .button {
-display: block;
+  display: block;
 min-width: 200px;
 max-height: 50px;
 font-family: inherit, sans-serif;
@@ -76,7 +76,7 @@ cursor: pointer;
 }
 
 /*-------LOGO-------*/
-.web {
+.logo-web {
   color: var(--accent-color);
 }
 
@@ -88,16 +88,25 @@ cursor: pointer;
   letter-spacing: 0.03em;
   margin-right: 93px;
 }
-.studio-head {
+.logo-header-studio {
   color: var(--main-color);
-  
 }
 
+.button {
+  font-family: inherit, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  cursor: pointer;
+  }
 
 /*---------HEADER---------*/
 
 .header {
- 
  background-color: var(--white-color);
   padding-top: 25px;
   padding-bottom: 25px;
@@ -206,6 +215,9 @@ border-radius: 2px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -214,15 +226,8 @@ background-image: linear-gradient(
  rgba(47, 48, 58, 0.4),
  rgba(47, 48, 58, 0.4)
  ), url(../images/prewiev.jpg);
- 
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-
 }
-.hero .container{
 
-}
 .hero-title {
   margin: 0 auto;
   text-align: center;
@@ -233,24 +238,13 @@ background-position: center;
   line-height: 1.36;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  
   color: var(--white-color);
 }
-.hero-btn {
-  display: block;
+.hero-button {
   margin: 0 auto;
   min-width: 200px;
   min-height: 50px;
-  font-family: inherit,
-  sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  text-align: center;
-  letter-spacing: 0.06em;
-  border-radius: 4px;
-  background-color: var(--accent-color);
-  color: var(--white-color);
-  cursor: pointer;
+
 }
 
 
@@ -259,6 +253,16 @@ background-position: center;
   background-color: var(--white-color);
   padding-top: 94px;
   
+}
+.tasks-list {
+  display: flex;
+}
+.tasks-item{
+  width: calc((100% - 90px) / 4);
+  min-width: 270px;
+}
+.tasks-item:not(:last-child){
+  margin-right: 30px;
 }
 .tasks-item::before{
   content: "";
@@ -283,7 +287,6 @@ background-image: url(../svg/antenna.svg)
   background-image: url(../svg/astronaut.svg)
 }
 .tasks-title {
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -299,17 +302,7 @@ background-image: url(../svg/antenna.svg)
   letter-spacing: 0.03em;
   color: var(--second-color);
 }
-.tasks-list {
-  display: flex;
 
-}
-.tasks-item{
-  width: calc((100% - 90px) / 4);
-  min-width: 270px;
-}
-.tasks-item:not(:last-child){
-  margin-right: 30px;
-}
 
 /*----------WORKS---------*/
 
@@ -319,11 +312,8 @@ padding-top: 94px;
 padding-bottom: 94px;
 
 }
-.works .container{
 
-}
 .works-title {
-  
   margin-bottom: 50px;
   text-align: center;
   letter-spacing: 0.03em;
@@ -346,8 +336,6 @@ padding-bottom: 94px;
 .works-list-item:last-child{
   margin-right: 0;
 }
-.works-link {
-}
 
 .works-list-title{
   content:"";
@@ -367,11 +355,11 @@ line-height: calc(16/14);
 text-align: center;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-
 color: #FFFFFF;
  background: rgba(47, 48, 58, 0.8);
 
 }
+
 /*---------TEAM---------*/
 
 .team {
@@ -390,8 +378,8 @@ color: #FFFFFF;
 }
 .team-list {
   display: flex;
-  
 }
+
 .team-list-item{
   background-color: var(--white-color);
 margin-right: 30px;
@@ -403,11 +391,11 @@ border-radius: 0px 0px 4px 4px;
 .team-list-item:last-child{
   margin-right: 0;
 }
-.name-div{
+.team-name-div{
 padding-top: 30px;
 padding-bottom: 30px;
 }
-.name-title {
+.team-name-title {
   text-align: center;
   color: var(--main-color);
   font-weight: 500;
@@ -415,7 +403,7 @@ padding-bottom: 30px;
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
-.name-text {
+.team-name-text {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 16px;
@@ -423,7 +411,9 @@ padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.2;
 }
+
 /*--------SOCIAL--------*/
+
 .social-links{
   display: flex;
   justify-content: center;
@@ -472,13 +462,11 @@ fill: var(--white-color);
 /*---------------CLIENTS-----------*/
 
 .clients {
-  
   background-color: var(--white-color);
 padding-top: 94px;
 padding-bottom: 94px;
 }
-
-.client-title{
+.clients-title{
   display: block;
   margin-bottom: 50px;
   text-align: center;
@@ -487,10 +475,9 @@ padding-bottom: 94px;
   font-size: 36px;
   line-height: 1.16;
 }
-.client-list{
+.clients-list{
   display: flex;
 }
-
 .client-item
 .client-link{
   display: block;
@@ -504,10 +491,8 @@ transition-duration:250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 transition-delay:250ms;
 }
-
 .client-icon{
   margin: 16px 32px;
-
 width: 106px;
 height: 60px;
 fill: #AFB1B8;
@@ -515,15 +500,11 @@ transition-property:fill;
 transition-duration:250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 transition-delay:250ms;
-
 }
-
 .client-link:hover,
 .client-link:focus {
   border-color: var(--accent-color);
 }
-
-
 .client-link:hover > .client-icon,
 .client-link:focus >.client-icon{
   fill: var(--accent-color);
@@ -543,16 +524,13 @@ transition-delay:250ms;
 .footdiv{
   display: flex;
 }
-.studio-foot {
+.logo-studio-footer {
   color: var(--white-color);
 }
-.footer-left {
-}
-.address-list {
+.footer-address-list {
   margin-top: 20px;
 }
 .address {
- 
   color: var(--white-color);
 }
 .footer-mail,
@@ -569,14 +547,13 @@ transition-delay:250ms;
   letter-spacing: 0.03em;
 }
 
-.footer-list > .list-item:not(:last-child){
+.footer-address-list > .list-item:not(:last-child){
   margin-bottom: 9px;
 }
 
 /*--------footer-right-------*/
 
-.footer-right{
-  
+.footer-right-div{
   margin-left: 70px;
   margin-top: 12px;
   height: 80px;
@@ -594,10 +571,6 @@ transition-delay:250ms;
  color: #FFFFFF;
 letter-spacing: 0.03em;
 margin-bottom: 20px;
-}
-
-.social-links > .footer-right{
- 
 }
 
 .footcolor{
@@ -621,8 +594,6 @@ background-color:  rgba(255, 255, 255, 0.1);
 .label-email{
   display: inline-block;
 position: absolute;
-
-
 top: 0;
 left: 0;
 font-weight: 700;
