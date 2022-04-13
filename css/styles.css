@@ -52,6 +52,11 @@ ul {
   padding-inline-start: 0;
 }
 
+.duration{
+  transition-duration:250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-delay:250ms;
+}
 
 .is-hidden{
   opacity: 0;
@@ -62,8 +67,6 @@ ul {
 
 .button {
   display: block;
-min-width: 200px;
-max-height: 50px;
 font-family: inherit, sans-serif;
 font-weight: 700;
 font-size: 16px;
@@ -583,7 +586,8 @@ background-color:  rgba(255, 255, 255, 0.1);
 
 
 /*---------input-email--------*/
-.div-email{
+
+.email-div{
   position: relative;
   margin-top: 12px;
  margin-left: 93px;
@@ -591,7 +595,7 @@ background-color:  rgba(255, 255, 255, 0.1);
   margin-bottom: 94px;
   width: 570px;
 }
-.label-email{
+.email-label{
   display: inline-block;
 position: absolute;
 top: 0;
@@ -603,7 +607,7 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #FFFFFF;
 }
-.input-email{
+.email-input{
   padding: 20px;
   margin-top: 20px;
   position: absolute;
@@ -627,7 +631,6 @@ color: #FFFFFF;
 
 /*projects*/
 .projects {
-  
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -641,22 +644,16 @@ color: #FFFFFF;
 .portfolio-btn-item:not(:last-child) {
   margin-right: 8px;
 }
-.nav {
-}
 
 .nav-btn {
-  font-family: Roboto, sans-serif;
   padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
-  border-radius: 4px;
   border: transparent;
   color: #212121;
   background-color: #f5f4fa;
-  cursor: pointer;
   transition-property: color, background-color;
 transition-duration:250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
