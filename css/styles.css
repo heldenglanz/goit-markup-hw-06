@@ -61,8 +61,7 @@ ul {
 
 
 .button {
-  display: block;
-  
+display: block;
 min-width: 200px;
 max-height: 50px;
 font-family: inherit, sans-serif;
@@ -881,4 +880,13 @@ line-height: 14px;
 letter-spacing: 0.01em;
 
 color: rgba(117, 117, 117, 0.5);
+}
+
+.email-btn{
+  display: flex;
+  align-items: center;
+  padding-left: 29px;
+}
+.telegram{
+  margin-left: 10px;
 }
