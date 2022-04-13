@@ -642,14 +642,13 @@ color: #FFFFFF;
 .portfolio-projects {
   display: flex;
   flex-wrap: wrap;
-  max-width: calc(100%-15px);
   margin-right: -15px;
   margin-left: -15px;
 }
 
 .portfolio-projects > .projects-item {
  
- width: calc(100% - 60px) / 3);
+ width: calc((100% - 60px) / 3);
  margin-right: 30px;
  margin-bottom: 30px;
  border: 1px solid #EEEEEE;
