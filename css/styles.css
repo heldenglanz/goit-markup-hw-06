@@ -3,7 +3,6 @@
   --second-color: #757575;
   --white-color: #FFFFFF;
   --accent-color: #2196f3;
-
 }
 
 p,
@@ -783,29 +782,120 @@ color: #212121;
 
 .label-modal{
   font-size: 12px;
-line-height: calc(14/12)
+line-height: calc(14/12);
 letter-spacing: 0.01em;
-color: var(--second-color)
+color: var(--second-color);
 
 }
 /*input*/
-.modal-info{
- padding: 16px;
-
+.modal-input{
 width: 100%;
-margin-bottom: 10px;
+padding-left: 42px;
 height: 40px;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
+cursor: pointer;
+outline: none;
 }
-.modal-info::placeholder{
+
+.modal-input::placeholder{
   font-size: 12px;
 line-height: 14px;
 letter-spacing: 0.01em;
 
 color: rgba(117, 117, 117, 0.5);
 }
+.modal-input:hover,
+.modal-input:focus{
+  border-color: var(--accent-color);
+}
+.modal-field:hover,
+.modal-field:focus +.input-icon{
+fill: var(--accent-color);
+}
 
+.modal-field{
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.input-icon{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+}
+
+
+
+.modal-comment{
+padding: 16px;
+height: 100px;
+width: 100%;
+margin-bottom: 10px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+resize:none;
+outline: none;
+}
+.modal-comment::placeholder{
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+}
+
+
+
+
+
+.checkbox{
+
+}
+.check-text{
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+
+color: var(--second-color)
+}
+
+.check-text::before{
+content:"";
+margin-left: 10px;
+width: 16px;
+height: 15px;
+border: 2px solid #212121;
+margin-right: 8px;
+border-radius: 2px;
+
+}
+
+.modal-check:checked + .check-text::before{
+  background-color: var(--accent-color);
+  background-image: url(../svg/check.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+.modal-check{
+  display: none;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-button{
+  margin-top: 30px;
+  Offset: 0px, 4px
+rgba(0, 0, 0, 0.15)
+}
+.privacy-link{
+  margin-left: 3px;
+  color: var(--accent-color);
+  text-decoration: underline;
+}
 .email-btn{
   display: flex;
   align-items: center;

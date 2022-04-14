@@ -367,10 +367,37 @@
                 </svg>
             </button>
             <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-            <label type="modal-name" class="label-modal">Имя<input type="name" class="modal-info" id="modal-name"/></label>
-            <label type="modal-tel" class="label-modal">Телефон<input type="name" class="modal-info" id="modal-tel"/></label>
-            <label type="modal-mail" class="label-modal">Почта<input type="name" class="modal-info" id="modal-mail"/></label>
-            <label type="modal-text" class="label-modal">Комментарий<input type="text" class="modal-info" id="modal-text" placeholder="Введите текст"/></label>
+            <label class="label-modal">Имя</label>
+            <div class="modal-field">
+               <input type="name" name="modal-name" class="modal-input duration" id="modal-name"/>
+               <svg class="input-icon duration duration" width="12" height="12">
+                   <use href="./svg/icons.svg#icon-nameicon">
+                   </use>
+               </svg>
+            </div>
+            <label class="label-modal">Телефон</label>
+            <div class="modal-field">
+                <input type="tel" name="modal-tel" class="modal-input duration" id="modal-tel"/>
+                <svg class="input-icon duration" width="13" height="13">
+                    <use href="./svg/icons.svg#icon-telicon">
+                    </use>
+                </svg>
+            </div>
+            <label class="label-modal">Почта</label>
+            <div class="modal-field">
+                <input type="email" name="modal-email" class="modal-input duration" id="modal-mail"/>
+                <svg class="input-icon duration" width="15" height="12">
+                    <use href="./svg/icons.svg#icon-mailicon">
+                    </use>
+                </svg>
+            </div>
+            <label class="label-modal">Комментарий</label>
+                <textarea name="modal-text" class="modal-comment" id="modal-text" placeholder="Введите текст"></textarea>
+                <div class="modal-field">
+<input class="modal-check" type="checkbox" id="privacy" name="modal-check" />
+<label for="privacy" class="check-text">Соглашаюсь с рассылкой и принимаю <a href="" class="privacy-link">Условия договора</a></label>
+</div>
+                <button type="submit" class="button hero-button modal-button">Отправить</button>
         </div>
         
         </div>
