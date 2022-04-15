@@ -78,7 +78,7 @@ border-radius: 4px;
 background-color: var(--accent-color);
 color: var(--white-color);
 cursor: pointer;
-border: none;
+border: none; 
 }
 
 /*-------LOGO-------*/
@@ -714,7 +714,7 @@ transition-property: transform;
 
 }
 
-
+/*-----modal------*/
 .backdrop{
   position: fixed;
  width: 100%;
@@ -772,9 +772,10 @@ letter-spacing: 0.03em;
 color: #212121;
 }
 
-.label-modal{
+.modal-lable{
+  display: inline-block;
   font-size: 12px;
-
+margin-bottom: 4px;
 line-height: calc(14/12);
 letter-spacing: 0.01em;
 color: var(--second-color);
@@ -782,7 +783,7 @@ color: var(--second-color);
 }
 /*input*/
 .modal-input{
-  margin-top: 4px;
+  
 width: 100%;
 padding-left: 42px;
 height: 40px;
