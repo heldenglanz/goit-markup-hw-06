@@ -35,6 +35,7 @@ ul {
   
 img{
   width: 100%;
+ 
 }
 
 body {
@@ -112,22 +113,20 @@ border: none;
 }
 .header-list {
   display: flex;
-  
 }
 
-.header-list .list-item:not(:last-child) {
+.header-list .header-list-item:not(:last-child) {
   margin-right: 50px;
 }
-/* .header-list.list-item,
-.header-contacts.list-item {
-  color: var(--main-color)
-} */
+
 .header-contacts {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  
   margin-left: auto;
 }
 .header-mail {
+  
   margin-right: 50px;
 }
 .header-link,
@@ -143,6 +142,9 @@ border: none;
 }
 .header-mail,
 .header-tel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--second-color);
 }
 .header-link:hover,
@@ -154,12 +156,13 @@ border: none;
   color: var(--accent-color);
 }
 
-.contact-icon{
+.header-contact-icon{
   margin-right: 10px;
 }
 
-.icon-mail,
-.icon-tel{
+.header-icon-mail,
+.header-icon-tel{
+
   fill:var(--second-color);
   transition-property:fill;
 
@@ -303,12 +306,14 @@ padding-bottom: 94px;
 }
 .works-list {
   display: flex;
+   
  
 }
 .works-list-item {
   position:relative;
   width: calc((100% - 60px) / 3);
  margin-right: 30px;
+
  
 }
 .works-list-item:last-child{
@@ -318,7 +323,7 @@ padding-bottom: 94px;
 .works-list-title{
   content:"";
   position: absolute;
-  bottom:0;
+ bottom: 0px;
   left:0;
  width: 100%;
  height: 70px;
@@ -392,7 +397,7 @@ padding-bottom: 30px;
 
 /*--------SOCIAL--------*/
 
-.social-links{
+.social-set{
   display: flex;
   justify-content: center;
   
@@ -548,9 +553,9 @@ background-color:  rgba(255, 255, 255, 0.1);
 }
 
 
-/*---------input-email--------*/
+/*---------footer-email-div--------*/
 
-.email-div{
+.footer-email-div{
   position: relative;
   margin-top: 12px;
  margin-left: 93px;
@@ -558,7 +563,7 @@ background-color:  rgba(255, 255, 255, 0.1);
   margin-bottom: 94px;
   width: 570px;
 }
-.email-label{
+.footer-email-label{
   display: inline-block;
 position: absolute;
 top: 0;
@@ -570,7 +575,7 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #FFFFFF;
 }
-.email-input{
+.footer-email-input{
   padding: 20px;
   margin-top: 20px;
   position: absolute;
@@ -582,7 +587,7 @@ color: #FFFFFF;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 }
-.email-btn{
+.footer-email-btn{
   position: absolute;
   bottom: 0;
   right: 0;
@@ -593,7 +598,7 @@ color: #FFFFFF;
 /*-------------Portfolio-----------*/
 
 /*projects*/
-.projects {
+.portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -608,7 +613,7 @@ color: #FFFFFF;
   margin-right: 8px;
 }
 
-.nav-btn {
+.portfolio--btn {
   padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
@@ -620,8 +625,8 @@ color: #FFFFFF;
   transition-property: color, background-color;
 
 }
-.nav-btn:hover,
-.nav-btn:focus {
+.portfolio--btn:hover,
+.portfolio--btn:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
@@ -738,7 +743,7 @@ transition-property: transform;
 border-radius: 4px;
 }
 
-.closebtn{
+.modal-close-button{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -747,7 +752,6 @@ border-radius: 4px;
   position: absolute;
   right:8px;
   top:8px;
-
   fill:#000000;
   background-color: #fff;
   border-radius: 50%;
@@ -756,8 +760,8 @@ border-radius: 4px;
   transition-property: fill;
 
 }
-.closebtn:hover,
-.closebtn:focus{
+.modal-close-button:hover,
+.modal-close-button:focus{
   fill: var(--accent-color);
 }
 
@@ -815,7 +819,7 @@ fill: var(--accent-color);
   margin-bottom: 10px;
 }
 
-.input-icon{
+.modal-input-icon{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -843,17 +847,18 @@ outline: none;
 .checkbox{
 
 }
-.check-text{
+.modal-check-text{
   display: flex;
   align-items: center;
   font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
+cursor: pointer;
 
 color: var(--second-color)
 }
 
-.check-text::before{
+.modal-check-text::before{
 content:"";
 margin-left: 10px;
 width: 16px;
@@ -864,7 +869,7 @@ border-radius: 2px;
 
 }
 
-.modal-check:checked + .check-text::before{
+.modal-check:checked + .modal-check-text::before{
   background-color: var(--accent-color);
   background-image: url(../svg/check.svg);
   background-size: contain;
@@ -883,12 +888,12 @@ border-radius: 2px;
   Offset: 0px, 4px
 rgba(0, 0, 0, 0.15)
 }
-.privacy-link{
+.modal-privacy-link{
   margin-left: 3px;
   color: var(--accent-color);
   text-decoration: underline;
 }
-.email-btn{
+.footer-email-btn{
   display: flex;
   align-items: center;
   padding-left: 29px;
