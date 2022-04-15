@@ -1,3 +1,8 @@
+/* *{
+  outline: solid 1px  teal;
+} */
+
+
 :root {
   --main-color: #212121;
   --second-color: #757575;
@@ -28,9 +33,9 @@ ul {
 }
 
   
-/* *{
-  outline: solid 1px  teal;
-} */
+img{
+  width: 100%;
+}
 
 body {
   font-family: Roboto, sans-serif;
@@ -73,6 +78,7 @@ border-radius: 4px;
 background-color: var(--accent-color);
 color: var(--white-color);
 cursor: pointer;
+border: none;
 }
 
 /*-------LOGO-------*/
@@ -91,18 +97,6 @@ cursor: pointer;
 .logo-header-studio {
   color: var(--main-color);
 }
-
-.button {
-  font-family: inherit, sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  text-align: center;
-  letter-spacing: 0.06em;
-  border-radius: 4px;
-  background-color: var(--accent-color);
-  color: var(--white-color);
-  cursor: pointer;
-  }
 
 /*---------HEADER---------*/
 
@@ -491,7 +485,7 @@ transition-property:fill;
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
-  padding-bottom: 60px;
+ 
 }
 .footdiv{
   display: flex;
